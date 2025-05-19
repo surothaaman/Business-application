@@ -1,102 +1,77 @@
+# Ex-05-Creating-a-Warehouse-Application-in-SalesForce.com
+### NAME: R.SUROTHAAMAN
+### REG NO: 212222103003
+## AIM:
+To create a warehouse application in salesforce.com
 
-## Ex.4 Deployment and configuration of a Private Cloud  in AWS
+## Procedure
 
-## Aim:
-To set up of a Private Cloud  in AWS.
+### Types of Applications in SFDC
 
-## Setting up of a private cloud in AWS:
+In Salesforce.com, we have two types of Applications they are
+1.	Classic Apps and
+2.	Lightning Apps.
 
-Setting up a private cloud within AWS, also known as a Virtual Private Cloud (VPC),
-involves creating a logically isolated virtual network that you can use to launch AWS
-resources. This provides you with full control over your virtual networking environment,
-including resource placement, connectivity, and security.
-Amazon Virtual Private Cloud (Amazon VPC) gives you full control over your virtual
-networking environment, including resource placement, connectivity, and security. Get
-started by setting up your VPC in the AWS service console. Next, add resources to it such as
-Amazon Elastic Compute Cloud (EC2) and Amazon Relational Database Service (RDS)
-instances. Finally, define how your VPCs communicate with each other across accounts,
-Availability Zones, or AWS Regions.
+In Salesforce we can create, manage and customise both applications according to user requirement.
 
-## Procedure:
-## 1. Plan Your VPC:
-## ● Determine your needs:
-Define your use case, including application requirements, security needs, and
-compliance standards.
-## ● Plan IP address ranges:
-Choose appropriate IP address ranges for your VPC and subnets to avoid conflicts.
-## ● Select Availability Zones:
-Decide which Availability Zones (AZs) you'll use for your resources, considering
-redundancy and performance.
-## ● Plan internet connectivity:
-Determine if you need public internet access and how to configure it.
-## ● Define security:
-Plan your security groups, network ACLs, and access controls to ensure a secure
-environment.
+## PROCEDURE
 
-## 3. Create Your VPC:
-Sign in to AWS Management Console: Access the VPC console and navigate to the VPC dashboard.
- Choose "Create VPC": Initiate the VPC creation process.
-Configure VPC details: Enter the VPC name, CIDR block, Availability Zones, and
-other necessary settings.
-Create subnets: Define subnets within your VPC to isolate different parts of your
-network.
-Create route tables: Specify how traffic is routed within and outside the VPC.
- Create security groups: Define access control rules for your resources.
+### Step 1: Log into your developer
+![op1](https://github.com/user-attachments/assets/f7e8dd1a-4355-4c38-9600-51b87c7af5cb)
 
-## 4. Deploying Resources:
-Launch EC2 instances: Create and launch virtual machines within your VPC.
- Set up RDS instances: Deploy databases for your applications.
-Configure networking: Connect your resources to the appropriate subnets, security
-groups, and route tables.
-Deploy other AWS services: Integrate other services like S3 for storage and Lambda for serverless computing.
 
-## 5.Managing and Monitoring:
-Use AWS CloudWatch: Monitor your VPC and resources for performance and
-health.
-Configure logging and auditing: Track access and activity within your VPC for
-security and compliance.
-Implement security best practices: Regularly review and update your security
-configuration.
-Scale and adjust as needed: Adjust your VPC infrastructure to meet changing
-demands.
+### Step 2: Click the Setup Link (upper-right corner).
+ ![ex2-2](https://github.com/DrMalathiSaravanan/Ex-02-Creating-a-Warehouse-Application-in-SalesForce.com/assets/139700114/183746f5-0293-4cd4-bece-09eb8b7ed11e)
 
-##  Output:
 
-## Create VPC:
+### Step 3: In the Left Navigation, Platform tools, then click App Manager
+![ex2-3](https://github.com/DrMalathiSaravanan/Ex-02-Creating-a-Warehouse-Application-in-SalesForce.com/assets/139700114/e5f4f615-d819-40cd-92d6-9d61da20122d)
 
-![Screenshot 2025-05-13 132155](https://github.com/user-attachments/assets/a97fd5ad-b36b-46c0-a049-25e9e9b9ade5)
+### Step 4: Click New Lightning App
 
-## Configure subnets:
+![ex2-4](https://github.com/DrMalathiSaravanan/Ex-02-Creating-a-Warehouse-Application-in-SalesForce.com/assets/139700114/76777c8e-433b-439d-9813-f0eafa73acb4)
 
-![Screenshot 2025-05-13 132309](https://github.com/user-attachments/assets/e418b198-4f05-4d26-8072-529dce5d904a)
+### Step 5: 
+After Next, define the fields for the custom app.
+•	App Label: Search Service.
+•	App Name: Search Service.
+•	Description: Search Service is one app where we manage all the business data and catalogues.
+ ![ex2-5](https://github.com/DrMalathiSaravanan/Ex-02-Creating-a-Warehouse-Application-in-SalesForce.com/assets/139700114/e82870fd-7400-4bf6-9dfe-622df1825574)
 
-![Screenshot 2025-05-13 132325](https://github.com/user-attachments/assets/77255511-c7b8-490e-a288-148e39f13e13)
 
-## Setting Internet Gateway:
+### Step 6: Choose the Image Source for the Custom App Logo.
 
-![Screenshot 2025-05-13 132456](https://github.com/user-attachments/assets/a68bd286-8101-4b4c-aef7-5d2be2c40ec2)
+Note: Before inserting an image for the logo you need to use the following procedure to add an image to the image gallery.
+ 
+### Step 7: Select Console Option
 
-![Screenshot 2025-05-13 132511](https://github.com/user-attachments/assets/74252b1a-add0-47c1-b482-185e0ee263ba)
 
-![Screenshot 2025-05-13 132525](https://github.com/user-attachments/assets/2be72b29-321a-498d-9994-856aa199e7c2)
+![ex2-7](https://github.com/DrMalathiSaravanan/Ex-02-Creating-a-Warehouse-Application-in-SalesForce.com/assets/139700114/f4401b49-8fc7-418a-ae18-1ec61d115739)
 
-## Creating Route Table:
 
-![Screenshot 2025-05-13 132731](https://github.com/user-attachments/assets/ed8136ca-ff43-4627-9582-bb9a2c470a54)
 
-## Configuring Route Table:
+### Step 8: Select a utility item
 
-![Screenshot 2025-05-13 132743](https://github.com/user-attachments/assets/ee51f140-2bb4-4cfe-8d01-2ed65c6a4f2c)
 
-## Editing Routes:
+![ex2-8](https://github.com/DrMalathiSaravanan/Ex-02-Creating-a-Warehouse-Application-in-SalesForce.com/assets/139700114/9f6179b9-a990-4edc-87a1-f9a5ecdbec0c)
 
-![Screenshot 2025-05-13 132801](https://github.com/user-attachments/assets/99d77a5f-95b7-4f70-889a-2795c53c8b0a)
 
-## Creating Route Table:
 
-![Screenshot 2025-05-13 132833](https://github.com/user-attachments/assets/bc81ab2e-3f62-4d72-b038-cbd939745206)
+### Step 9: Select any of the user profiles. Then Click Save &Finish
 
-## Result:
 
-Thus, a private cloud on AWS involves using VPCs has been created for  a dedicated, isolated network where we can manage our resources and control access according to our requirements.
+![ex2-9](https://github.com/DrMalathiSaravanan/Ex-02-Creating-a-Warehouse-Application-in-SalesForce.com/assets/139700114/454ff962-a7a0-41c3-9cd0-0b3e638f117b)
 
+ 
+### Step 10: A new app will be created and displayed
+
+
+
+![ex2-10](https://github.com/DrMalathiSaravanan/Ex-02-Creating-a-Warehouse-Application-in-SalesForce.com/assets/139700114/9be0d550-d6ad-434e-82bb-74f9c05bfd2f)
+
+
+
+
+## RESULT:
+
+Thus, creating a Warehouse Application in SalesForce.com is successfully created.
